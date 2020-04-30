@@ -17,14 +17,20 @@
 
 body {
   text-align: center;
-  background-color: #020504;
+  background-color: #000;
   font-family: 'Roboto Mono';
   font-weight: 300;
 }
 
+main {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
 h2 {
   color: #410847;
-  margin: 20px auto;
+  margin: 30px auto;
   font-weight: 300;
   padding: 7px;
   border: 0.5px solid #410847;
@@ -33,18 +39,23 @@ h2 {
 
 p {
   padding: 5px;
-  width: 300px;
-  margin: 20px auto;
   border-radius: 50px;
   color: #410847;
+  text-align: center;
+}
+
+#location {
+  margin: 0 auto;
   font-weight: 500;
+  width: 80%;
+  color: #410847;
 }
 
 #wDescription {
-  width: 550px;
+  display: block;
+  width: 100%;
   border-radius: 7px;
   background-color: #0A4738;
-  opacity: 0.9;
   color: black;
   font-weight: 300;
 }
@@ -53,9 +64,9 @@ button {
   background-color: #410847;
   text-decoration: none;
   border: none;
-  width: 250px;
-  height: 250px;
-  margin: 10px auto;
+  width: 230px;
+  height: 230px;
+  margin: 0 auto;
   font-size: 3rem;
   border-radius: 50%;
 }
@@ -67,10 +78,14 @@ button:hover {
   cursor: pointer;
 }
 
-a, span {
+a {
   text-decoration: none;
   color: #616161;
   padding: 2px;
+}
+
+#div {
+  color: #616161;
 }
 
 .active {

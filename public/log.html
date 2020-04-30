@@ -4,10 +4,16 @@
     <meta charset="utf-8">
     <title>Weather Here project</title>
       <link rel="stylesheet" href="style.css" type="text/css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
     <script src="log.js"></script>
   </head>
   <body>
     <a href="index.html">checkin</a><span>|</span><a href="log.html" class="active">view previous</a>
-    <h3>The geolocation log</h3>
+    <h2>The geolocation log</h2>
+    <div id="mapid" style=" height: 380px; width: 70%; margin: 0 auto; "></div>
   </body>
 </html>

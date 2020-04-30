@@ -11,8 +11,18 @@ if('geolocation' in navigator) {
     const resp = await fetch(`/weather/${userposition.lat},${userposition.lon}`);
     const json = await resp.json();
     console.log(json);
-    document.getElementById('wDescription').textContent = `The weather here today is ${json.weather_code.value}. \n
-    The temperature is ${json.temp.value}${json.temp.units} and it feels like ${json.feels_like.value}. Humidity is ${json.humidity.value}${json.humidity.units} and the wind speed is ${json.wind_speed.value}${json.wind_speed.units}`;
+    const weather = json.weather;
+    userposition.weather = weather;
+    userposition.aq = json.air_quality;
+    document.getElementById('weather').textContent = `The weather here today is ${weather.weather_code.value}. \n
+    The temperature is ${weather.temp.value}${weather.temp.units} and it feels like ${weather.feels_like.value}. Humidity is ${weather.humidity.value}${weather.humidity.units} and the wind speed is ${weather.wind_speed.value}${weather.wind_speed.units}`;
+    try {
+      const aq = json.air_quality.results[0].measurements[0];
+      document.getElementById('aq').textContent = `The air has ${aq.value}${aq.unit} of ${aq.parameter.toUpperCase()} in it.`;
+    } catch(e) {
+      document.getElementById('aq').textContent = '';
+      console.log(e);
+    }
   })
 } else {
   console.log('boo');

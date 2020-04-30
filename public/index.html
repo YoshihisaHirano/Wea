@@ -12,14 +12,19 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-    <a href="index.html" class="active">checkin</a><span>|</span><a href="log.html">view previous</a>
+    <a href="index.html" class="active">checkin</a><span id="div">|</span><a href="log.html">view previous</a>
     <h2>Welcome, stranger!</h3>
-    <p>
-      Here are your coordinates: <br>
-      lat: <span id='lat'></span>,
-      lon: <span id='lon'></span>
-    </p>
-    <p id="wDescription"></p>
+      <main>
+        <div id="location">
+          Here are your coordinates: <br>
+          lat: <span id='lat'></span>,
+          lon: <span id='lon'></span>
+        </div>
+        <p id="wDescription">
+          <span id="weather"></span>
+          <span id="aq"></span>
+        </p>
+      </main>
     <button id="submitButton">checkin</button>
     <script src="sketch.js"></script>
   </body>
