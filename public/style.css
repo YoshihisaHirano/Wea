@@ -1,5 +1,78 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Mono Light'), local('RobotoMono-Light'), url(https://fonts.gstatic.com/s/robotomono/v7/L0xkDF4xlVMF-BfR8bXMIjDgiWqxf78.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Mono Medium'), local('RobotoMono-Medium'), url(https://fonts.gstatic.com/s/robotomono/v7/L0xkDF4xlVMF-BfR8bXMIjC4iGqxf78.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  text-align: center;
+  background-color: #020504;
+  font-family: 'Roboto Mono';
+  font-weight: 300;
+}
+
+h2 {
+  color: #410847;
+  margin: 20px auto;
+  font-weight: 300;
+  padding: 7px;
+  border: 0.5px solid #410847;
+  width: 300px;
+}
+
 p {
-  background-color: AntiqueWhite;
   padding: 5px;
-  width: 200px;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 50px;
+  color: #410847;
+  font-weight: 500;
+}
+
+#wDescription {
+  width: 550px;
+  border-radius: 7px;
+  background-color: #0A4738;
+  opacity: 0.9;
+  color: black;
+  font-weight: 300;
+}
+
+button {
+  background-color: #410847;
+  text-decoration: none;
+  border: none;
+  width: 250px;
+  height: 250px;
+  margin: 10px auto;
+  font-size: 3rem;
+  border-radius: 50%;
+}
+button:focus {
+  outline:0;
+}
+button:hover {
+  background-color: #56235C;
+  cursor: pointer;
+}
+
+a, span {
+  text-decoration: none;
+  color: #616161;
+  padding: 2px;
+}
+
+.active {
+  color: #424242;
 }

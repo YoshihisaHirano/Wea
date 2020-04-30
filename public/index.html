@@ -12,13 +12,15 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-    <a href="index.html">post</a><span>|</span><a href="log.html">get</a>
-    <h3>Getting user's geolocation</h3>
+    <a href="index.html" class="active">checkin</a><span>|</span><a href="log.html">view previous</a>
+    <h2>Welcome, stranger!</h3>
     <p>
-      lat: <span id='lat'></span> <br>
+      Here are your coordinates: <br>
+      lat: <span id='lat'></span>,
       lon: <span id='lon'></span>
     </p>
-    <button id="submitButton">Submit geolocation</button>
+    <p id="wDescription"></p>
+    <button id="submitButton">checkin</button>
     <script src="sketch.js"></script>
   </body>
 </html>
